@@ -1,12 +1,4 @@
-
-fun main(args: Array<String>) {
-    repeat("Hello, world!!!", 5);
-    printSum(3,6);
-    val language = Language("Kotlin");
-    println(language.name);
-    printHello();
-    
-}
+data class Language(val name: String);
 
 fun repeat(word:String, times: Int){
     var i=0;
@@ -22,6 +14,26 @@ fun printSum(a: Int, b: Int){
 
 fun printHello()= println("Hello!");
 
+fun main(args: Array<String>) {
+    repeat("Hello, world!!!", 5);
+    printSum(3,6);
+    val language = Language("Kotlin");
+    println(language.name);
+    printHello();
+    
+}
 
 
-data class Language(val name: String);
+
+// Output:
+/*
+Hello, world!!!
+Hello, world!!!
+Hello, world!!!
+Hello, world!!!
+Hello, world!!!
+La suma de 3 más 6 es 9
+Kotlin
+Hello!
+
+*/
